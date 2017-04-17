@@ -1,0 +1,637 @@
+/*=======================================
+>>>>>>>>  Fonts  <<<<<<<<
+========================================*/
+
+h3 {
+  text-transform: uppercase;
+  font-size: 11px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  /*border: 1px solid pink;*/
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+/*=======================================
+>>>>>>>>  Header  <<<<<<<<
+========================================*/
+
+header.mobile {
+  display: flex;
+  align-items: center;
+  background: #364155;
+  flex-direction: column;
+  width: 100%;
+}
+
+body {
+  background: #f0f3f6;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/*=======================================
+>>>>>>>>  nav icons  <<<<<<<<
+========================================*/
+
+.fa {
+  color: #ADB8CA;
+  text-align: center;
+}
+
+.fa-home:before {
+  font-size: 1.33333333em;
+}
+
+.fa-home:hover,
+.fa-briefcase:hover,
+.fa-file-text-o:hover,
+.fa-tasks:hover,
+.fa-calendar-o:hover,
+.fa-user-circle:hover {
+  color: white;
+}
+
+nav.mobile {
+  height: 45px;
+  width: 95%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+/*=======================================
+>>>>>>>>  search  <<<<<<<<
+========================================*/
+
+form {
+  display: flex;
+  justify-content: center;
+}
+
+.input-search {
+  margin: 0 13px 13px 13px;
+  padding-left: 30px;
+  border: none;
+  width: 95%;
+  height: 25px;
+  background: url("assets/search.png");
+  background-size: 16px;
+  background-position-y: 5px;
+  background-position-x: 5px;
+  color: #DAE4EA;
+  background-repeat: no-repeat;
+  background-color: #6F7E95;
+}
+
+.input-search::placeholder {
+  color: white;
+}
+
+
+/*=======================================
+>>>>>>>>  Article  <<<<<<<<
+========================================*/
+
+article {
+  display: flex;
+  width: 95vw;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.table-container {
+  padding: 0 10px 0 10px;
+  background: white;
+}
+
+.article-header {
+  display: flex;
+  align-items: flex-start;
+  width: 95vw;
+}
+
+.article-header-div {
+  display: flex;
+  flex-direction: row;
+}
+
+table {
+  height: 500px;
+  /*border-bottom: 1px solid black;*/
+}
+
+
+/*=======================================
+>>>>>>>>  table  <<<<<<<<
+========================================*/
+
+.edit-button {
+  float: right;
+}
+
+.table-wrapper {
+  margin: 10px;
+  border: 1px solid red;
+}
+
+.table-footer {
+  height: 37px;
+}
+
+table {
+  background: white;
+  height: 100%;
+  border-collapse: collapse;
+  empty-cells: show;
+}
+
+tbody {
+  padding: 10px;
+}
+
+th {
+  text-transform: uppercase;
+  font-size: 10px;
+  width: 40%;
+  color: #6a7278;
+}
+
+td {
+  width: 60%;
+  color: black;
+}
+
+th,
+td {
+  text-align: left;
+  font-size: 12px;
+  padding: 10px 4px;
+}
+
+tr {
+  display: flex;
+  margin: 0 auto;
+  width: 95%;
+}
+
+.table-row {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #F4F4F4;
+}
+
+thead {
+  background: #6F7E95;
+  border: 0px;
+}
+
+.article-header-div {
+  background: #6F7E95;
+  height: 40px;
+  align-items: center;
+}
+
+h3.table-header {
+  color: white;
+  line-height: 23px;
+}
+
+.edit-button {
+  background: #7E8CA8;
+  border: none;
+  text-transform: uppercase;
+  color: white;
+  margin-left: 12px;
+  width: 60px;
+  height: 23px;
+}
+
+.edit-button:before {
+  font-family: 'FontAwesome';
+  content: "\f040";
+  padding-right: 5px;
+}
+
+.edit-button:hover {
+  background-color: #364155;
+}
+
+.fa-facebook,
+.fa-twitter,
+.fa-linkedin-square {
+  padding-left: 10px;
+  float: right;
+}
+
+.fa-facebook:hover,
+.fa-twitter:hover,
+.fa-linkedin-square:hover {
+  color: #364155;
+}
+
+.money {
+  font-weight: 700;
+}
+
+@media (min-width: 400px) {
+  .table-row {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #F4F4F4;
+  }
+}
+
+@media (min-width: 550px) {
+  .fa.mobile {
+    display: none;
+  }
+  .social-media-wrapper {
+    display: flex;
+    flex-direction: column;
+    ;
+  }
+  .facebook-button,
+  .twitter-button,
+  .linkedin-button {
+    height: 36px;
+    width: 220px;
+    margin: 5px;
+    border: none;
+    color: white;
+    font-size: 12px;
+  }
+  .facebook-button {
+    background: #4A6DC0;
+  }
+  .twitter-button {
+    background: #01AAEF;
+  }
+  .linkedin-button {
+    background: #037FBD;
+  }
+  .facebook-button:hover {
+    background: #6785cb;
+  }
+  .twitter-button:hover {
+    background: #34c5fe;
+  }
+  .linkedin-button:hover {
+    background: #04a2f1;
+  }
+  .facebook-button:before {
+    font-family: 'FontAwesome';
+    content: "\f09a";
+    color: white;
+    position: relative;
+    left: -43px;
+  }
+  .twitter-button:before {
+    font-family: 'FontAwesome';
+    content: "\f099";
+    color: white;
+    position: relative;
+    left: -50px;
+  }
+  .linkedin-button:before {
+    font-family: 'FontAwesome';
+    content: "\f08c";
+    color: white;
+    position: relative;
+    left: -43px;
+  }
+  /*=======================================
+  >>>>>>>>  right-side-bar  <<<<<<<<
+  ========================================*/
+  .right-side-bar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 226px;
+    border: 1px solid red;
+  }
+  .right-side-bar-wrapper {
+    display: flex;
+    width: 100%;
+    margin: 25px;
+    justify-content: center;
+    flex-direction: column;
+  }
+  span.right-side-bar {
+    padding-top: 15px;
+  }
+  h2.right-side-bar.link-job,
+  h2.right-side-bar.widget,
+  h2.right-side-bar.upload-resume {
+    color: #6a7278;
+    font-size: 14px;
+  }
+  p.right-side-bar.link-job,
+  p.right-side-bar.widget,
+  p.right-side-bar.upload-resume {
+    padding-top: 5px;
+    font-size: 10px;
+    line-height: 15px;
+    color: #8D979F;
+  }
+  p.right-side-bar.link-job-url,
+  p.right-side-bar.widget-url,
+  p.right-side-bar.upload-resume-url {
+    display: inline-block;
+    font-size: 10px;
+    color: #8D979F;
+  }
+  button.right-side-bar.link-job-url,
+  button.right-side-bar.widget-url,
+  button.right-side-bar.upload-resume-url {
+    height: 26px;
+    width: 40px;
+    margin-left: 5px;
+    background: #41B9BE;
+    color: white;
+    border: none;
+    font-size: 8px;
+  }
+  h2.right-side-bar.link-job:before {
+    font-family: 'FontAwesome';
+    content: "\f0ac";
+    color: #6a7278;
+    position: relative;
+    padding-right: 5px;
+  }
+  h2.right-side-bar.widget:before {
+    font-family: 'FontAwesome';
+    content: "\f14c";
+    color: #6a7278;
+    position: relative;
+    padding-right: 5px;
+  }
+  h2.right-side-bar.upload-resume:before {
+    font-family: 'FontAwesome';
+    content: "\f1d8";
+    color: #6a7278;
+    position: relative;
+    padding-right: 5px;
+  }
+  /*=======================================
+  >>>>>>>>  Graphs  <<<<<<<<
+  ========================================*/
+  .metrics-container {
+    display: flex;
+    flex-direction: row;
+    margin: 50px;
+  }
+  div.graph-applicants {
+    height: 124px;
+    width: 300px;
+    background-image: url("assets/bar-chart.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  h3.graph-applicants {
+    text-align: center;
+    color: #6a7278;
+    margin-top: 20px;
+  }
+  section.circle-graph-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  div.circle-graph-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .circle-graph-1-container,
+  .circle-graph-2-container,
+  .circle-graph-3-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    border: solid;
+    border-width: 6px;
+    margin: 10px;
+  }
+  .circle-graph-1-container {
+    transform: rotate(60deg);
+    border-color: #4EB8BF #fff #4EB8BF #4EB8BF;
+  }
+  .circle-graph-2-container {
+    transform: rotate(25deg);
+    border-color: #fff #fff #17A3F7 #17A3F7;
+  }
+  .circle-graph-3-container {
+    transform: rotate(25deg);
+    border-color: #fff #fff #B068AF #fff;
+  }
+  .circle-graph-1-wrapper {
+    transform: rotate(-60deg);
+  }
+  .circle-graph-2-wrapper {
+    transform: rotate(-25deg);
+  }
+  .circle-graph-3-wrapper {
+    transform: rotate(-25deg);
+  }
+  h3.circle-graphs {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 800px) {
+  .jobs-side-bar {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+  }
+  .table-wrapper {
+    margin: 0;
+  }
+  .edit-button {
+    float: left;
+    margin-left: 0px;
+  }
+  /*=======================================
+  >>>>>>>>  ASIDE  <<<<<<<<
+  ========================================*/
+  body {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  aside {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 120px;
+    background: #354052;
+  }
+  article {
+    width: 63vw;
+  }
+  header.mobile {
+    display: none;
+  }
+
+  .aside-profile-container,
+  .aside-main-container,
+  .aside-admin-container,
+  .aside-categories-container{
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #30394A;
+  }
+  .aside-profile-container{
+    justify-content: center;
+    height: 10%;
+    min-height: 100px;
+  }
+  .aside-main-container {
+    height: 20%;
+    min-height: 176px;
+    border: 1px solid red;
+    border-bottom: 2px solid #30394A;
+  }
+  .aside-admin-container {
+    height: 20%;
+    min-height: 176px;
+    border: 1px solid red;
+    border-bottom: 2px solid #30394A;
+  }
+  .aside-categories-container {
+    border-bottom: 2px solid #30394A;
+    height: 20%;
+    min-height: 176px;
+    border: 1px solid red;
+
+  }
+  .profile-pic {
+    width: 50px;
+    height: 50px;
+    background-image: url("assets/justin_timberlake.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 100px;
+
+  }
+  /*.aside-profile-wrapper,*/
+  .aside-main-wrapper,
+  .aside-admin-wrapper,
+  .aside-categories-wrapper  {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-left: 10px;
+    height: 85%
+  }
+
+  a,
+  .user-name {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 9px;
+    color: #939DAE;
+  }
+  .user-name {
+    margin-top: 10px;
+    text-transform: capitalize;
+  }
+  h3.aside {
+    color: #647183;
+    text-transform: capitalize;
+    font-size: 9px;
+  }
+  /*=======================================
+  >>>>>>>> aside icons  <<<<<<<<
+  ========================================*/
+  .home:before,
+  .jobs:before,
+  .resumes:before,
+  .tasks:before,
+  .calendar:before,
+  .users:before,
+  .locations:before,
+  .workflows:before,
+  .job-boards:before,
+  .social:before {
+    font-family: 'FontAwesome';
+    font-size: 10px;
+    color: #939DAE;
+    position: relative;
+    padding-right: 8px;
+  }
+  .home:before {
+    content: "\f14c";
+  }
+  .jobs:before {
+    content: "\f14c";
+  }
+  .resumes:before {
+    content: "\f14c";
+  }
+  .tasks:before {
+    content: "\f14c";
+  }
+  .calendar:before {
+    content: "\f14c";
+  }
+  .users:before {
+    content: "\f14c";
+  }
+  .locations:before {
+    content: "\f14c";
+  }
+  .workflows:before {
+    content: "\f14c";
+  }
+  .job-boards:before {
+    content: "\f14c";
+  }
+  .social:before {
+    content: "\f14c";
+  }
+  .home:hover,
+  .jobs:hover,
+  .resumes:hover,
+  .tasks:hover,
+  .calendar:hover,
+  .users:hover,
+  .locations:hover,
+  .workflows:hover,
+  .job-boards:hover,
+  .social:hover {
+    color: white;
+  }
+  .home:hover:before,
+  .jobs:hover:before,
+  .resumes:hover:before,
+  .tasks:hover:before,
+  .calendar:hover:before,
+  .users:hover:before,
+  .locations:hover:before,
+  .workflows:hover:before,
+  .job-boards:hover:before,
+  .social:hover:before {
+    color: white;
+  }
+
+  a:hover {
+    background: #30394A
+  }
+}

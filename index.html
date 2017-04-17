@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+  <title>Static Comp 3</title>
+</head>
+<header class="mobile">
+  <nav class="mobile">
+    <i class="fa fa-home fa-lg" aria-hidden="true"></i>
+    <i class="fa fa-briefcase fa-lg" aria-hidden="true"></i>
+    <i class="fa fa-file-text-o fa-lg" aria-hidden="true"></i>
+    <i class="fa fa-tasks fa-lg" aria-hidden="true"></i>
+    <i class="fa fa-calendar-o fa-lg" aria-hidden="true"></i>
+    <i class="fa fa-user-circle fa-lg" aria-hidden="true"></i>
+  </nav>
+  <input class="input-search " type="search" name="search" placeholder="Search for a job, task, or resume">
+</header>
+
+<header class="desktop">
+
+
+</header>
+
+<aside>
+  <div class="aside-profile-container">
+    <div class="aside-profile-wrapper">
+      <div class="profile-pic"></div>
+      <h3 class="user-name">Evan Miller</h3>
+    </div>
+  </div>
+  <div class="aside-main-container">
+    <div class="aside-main-wrapper">
+      <h3 class="aside">Main</h3>
+      <a class="home" href="#">home</a>
+      <a class="jobs" href="#">jobs</a>
+      <a class="resumes" href="#">resumes</a>
+      <a class="tasks" href="#">tasks</a>
+      <a class="calendar" href="#">calendar</a>
+    </div>
+  </div>
+
+  <div class="aside-admin-container">
+    <div class="aside-admin-wrapper">
+      <h3 class="aside">Admin</h3>
+      <a class='users' href="#">users</a>
+      <a class='locations' href="#">locations</a>
+      <a class='workflows' href="#">workflows</a>
+      <a class='job-boards' href="#">job boards</a>
+      <a class='social' href="#">social</a>
+    </div>
+
+  </div>
+  <div class="aside-categories-container">
+    <div class="aside-categories-wrapper">
+      <h3 class="aside">categories</h3>
+      <a class='administrative' href="#">Administrative</a>
+      <a class='design' href="#">Design</a>
+      <a class='executive' href="#">Executive</a>
+      <a class='human resources' href="#">Human Resources</a>
+    </div>
+  </div>
+</aside>
+
+<body>
+
+  <div class="main-container">
+
+
+    <div class="metrics-container">
+      <section class="circle-graph-container">
+        <div class="circle-graph-container">
+          <div class="circle-graph-1-container">
+            <div class="circle-graph-1-wrapper">
+              <h2 class="circle-graph-1">3,154</h2>
+              <h3 class="circle-graph-1">applicants</h3>
+            </div>
+          </div>
+          <div class="circle-graph-2-container">
+            <div class="circle-graph-2-wrapper">
+              <h2 class="circle-graph-2">3,154</h2>
+              <h3 class="circle-graph-2">interview</h3>
+            </div>
+          </div>
+          <div class="circle-graph-3-container">
+            <div class="circle-graph-3-wrapper">
+              <h2 class="circle-graph-3">3,154</h2>
+              <h3 class="circle-graph-3">forwards</h3>
+            </div>
+          </div>
+        </div>
+        <h3 class="circle-graphs">Totals Out of 5,231views</h3>
+      </section>
+      <section class="graph-applicants-wrapper">
+        <div class="graph-applicants"></div>
+        <h3 class="graph-applicants">applicants/day</h3>
+      </section>
+    </div>
+
+    <div class="jobs-side-bar">
+      <article class="table-wrapper">
+        <table>
+          <thead>
+            <th class="table-row-1">
+              <h3 class="table-header">job description</h3>
+              <td>
+                <button class="edit-button" type="button" name="button">edit</button>
+              </td>
+            </th>
+          </thead>
+
+          <tfoot>
+            <th>
+              <td class="table-footer">
+                <i class="fa fa-facebook fa-2x mobile" aria-hidden="true"></i>
+                <i class="fa fa-twitter fa-2x mobile" aria-hidden="true"></i>
+                <i class="fa fa-linkedin-square fa-2x mobile" aria-hidden="true"></i>
+              </td>
+
+            </th>
+          </tfoot>
+          <tbody>
+            <tr class="table-row">
+              <th class="table-categories">position title</th>
+              <td>Customer Service Representative</td>
+            </tr>
+            <tr class="table-row">
+              <th class="table-categories">location</th>
+              <td>San Francisco, CA</td>
+            </tr>
+            <tr class="table-row">
+              <th class="table-categories">employment type</th>
+              <td>Full Time</td>
+            </tr>
+            <tr class="table-row">
+              <th class="table-categories">experience</th>
+              <td>Mid-level</td>
+            </tr>
+            <tr class="table-row">
+              <th class="table-categories">status</th>
+              <td>Open</td>
+            </tr>
+            <tr class="table-row">
+              <th class="table-categories">description</th>
+              <td>You will be reposnible for making pancakes, lots of pancakes. You will need to be prepared to have syrup on hand at all times from canadian maple trees. Butter must be only salted organic butter at room temperature. Utensils not made from
+                plastic are a plus.
+              </td>
+            </tr>
+            <tr class="table-row">
+              <th class="table-categories">hiring lead</th>
+              <td>Tom Tizzy</td>
+            </tr>
+            <tr class="table-row">
+              <th class="table-categories">approved salary</th>
+              <td class="money">$58,000</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+
+      <div class="right-side-bar-container">
+        <div class="social-media-wrapper">
+          <button class="facebook-button" type="button" name="button">Post to Facebook</button>
+          <button class="twitter-button" type="button" name="button">Tweet this Job</button>
+          <button class="linkedin-button" type="button" name="button">Post to Linkedin</button>
+        </div>
+
+        <div class="right-side-bar-wrapper">
+          <h2 class="right-side-bar link-job">Link to this Job</h2>
+          <p class="right-side-bar link-job">Cookies!! who ate all teh cookies from the cookie jar. Was it you, Johnny? WAS IT, YOU!?</p>
+          <span class="right-side-bar">
+        <p class="right-side-bar link-job-url">www.thisisaveryveryverylonglink.com</p>
+        <button class="right-side-bar link-job-url" type="button" name="button">Copy</button>
+      </span>
+        </div>
+        <div class="right-side-bar-wrapper">
+          <h2 class="right-side-bar widget">Use the Button Widget</h2>
+          <p class="right-side-bar widget">Cookies!! who ate all teh cookies from the cookie jar. Was it you, Johnny? WAS IT, YOU!?</p>
+          <span class="right-side-bar">
+        <p class="right-side-bar widget-url">www.thisisaveryveryverylonglink.com</p>
+        <button class="right-side-bar widget-url" type="button" name="button">Copy</button>
+      </span>
+        </div>
+        <div class="right-side-bar-wrapper">
+          <h2 class="right-side-bar upload-resume">Upload Resumes by Email</h2>
+          <p class="right-side-bar upload-resume">Cookies!! who ate all teh cookies from the cookie jar. Was it you, Johnny? WAS IT, YOU!?</p>
+          <span class="right-side-bar">
+        <p class="right-side-bar upload-resume-url">www.thisisaveryveryverylonglink.com</p>
+        <button class="right-side-bar upload-resume-url" type="button" name="button">Copy</button>
+      </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
