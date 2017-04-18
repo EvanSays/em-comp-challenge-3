@@ -139,7 +139,7 @@ table {
 
 .table-wrapper {
   margin: 10px;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
 }
 
 .table-footer {
@@ -315,7 +315,7 @@ h3.table-header {
     flex-direction: column;
     align-items: center;
     width: 226px;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
   }
   .right-side-bar-wrapper {
     display: flex;
@@ -386,7 +386,9 @@ h3.table-header {
   .metrics-container {
     display: flex;
     flex-direction: row;
-    margin: 50px;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #939DAE;
   }
   div.graph-applicants {
     height: 124px;
@@ -426,15 +428,15 @@ h3.table-header {
   }
   .circle-graph-1-container {
     transform: rotate(60deg);
-    border-color: #4EB8BF #fff #4EB8BF #4EB8BF;
+    border-color: #4EB8BF #D9E2E7 #4EB8BF #4EB8BF;
   }
   .circle-graph-2-container {
     transform: rotate(25deg);
-    border-color: #fff #fff #17A3F7 #17A3F7;
+    border-color: #D9E2E7 #D9E2E7 #17A3F7 #17A3F7;
   }
   .circle-graph-3-container {
     transform: rotate(25deg);
-    border-color: #fff #fff #B068AF #fff;
+    border-color: #D9E2E7 #D9E2E7 #B068AF #D9E2E7;
   }
   .circle-graph-1-wrapper {
     transform: rotate(-60deg);
@@ -485,16 +487,15 @@ h3.table-header {
   header.mobile {
     display: none;
   }
-
   .aside-profile-container,
   .aside-main-container,
   .aside-admin-container,
-  .aside-categories-container{
+  .aside-categories-container {
     display: flex;
     align-items: center;
     border-bottom: 2px solid #30394A;
   }
-  .aside-profile-container{
+  .aside-profile-container {
     justify-content: center;
     height: 10%;
     min-height: 100px;
@@ -502,21 +503,17 @@ h3.table-header {
   .aside-main-container {
     height: 20%;
     min-height: 176px;
-    border: 1px solid red;
     border-bottom: 2px solid #30394A;
   }
   .aside-admin-container {
     height: 20%;
     min-height: 176px;
-    border: 1px solid red;
     border-bottom: 2px solid #30394A;
   }
   .aside-categories-container {
     border-bottom: 2px solid #30394A;
-    height: 20%;
-    min-height: 176px;
-    border: 1px solid red;
-
+    height: 15%;
+    min-height: 145px;
   }
   .profile-pic {
     width: 50px;
@@ -526,20 +523,31 @@ h3.table-header {
     background-position: center;
     background-size: cover;
     border-radius: 100px;
-
   }
-  /*.aside-profile-wrapper,*/
   .aside-main-wrapper,
   .aside-admin-wrapper,
-  .aside-categories-wrapper  {
+  .aside-categories-wrapper {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-around;
-    margin-left: 10px;
+    width: 100%;
+    height: 20px;
+    /*align-items: flex-start;*/
+    /*justify-content: space-around;*/
     height: 85%
   }
-
+  .aside-profile-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  a,
+  h3.aside {
+    display: flex;
+    align-items: center;
+    height: 25px;
+    /*border:1px solid red;*/
+    padding-left: 15px;
+  }
   a,
   .user-name {
     text-decoration: none;
@@ -547,6 +555,12 @@ h3.table-header {
     font-weight: 700;
     font-size: 9px;
     color: #939DAE;
+  }
+  a.administrative,
+  a.design,
+  a.executive,
+  a.human-resources {
+    text-transform: capitalize;
   }
   .user-name {
     margin-top: 10px;
@@ -560,6 +574,10 @@ h3.table-header {
   /*=======================================
   >>>>>>>> aside icons  <<<<<<<<
   ========================================*/
+  .administrative:before,
+  .design:before,
+  .executive:before,
+  .human-resources:before,
   .home:before,
   .jobs:before,
   .resumes:before,
@@ -569,42 +587,60 @@ h3.table-header {
   .locations:before,
   .workflows:before,
   .job-boards:before,
-  .social:before {
+  .social:before,
+  .user-name:after {
     font-family: 'FontAwesome';
-    font-size: 10px;
+    font-size: 12px;
     color: #939DAE;
     position: relative;
     padding-right: 8px;
   }
-  .home:before {
+  .user-name:after {
     content: "\f14c";
+    padding-right: 0px;
+    padding-left: 5px;
+  }
+  .home:before {
+    content: "\f015";
   }
   .jobs:before {
-    content: "\f14c";
+    content: "\f0b1";
   }
   .resumes:before {
-    content: "\f14c";
+    content: "\f0f6";
   }
   .tasks:before {
-    content: "\f14c";
+    content: "\f0ae";
   }
   .calendar:before {
-    content: "\f14c";
+    content: "\f133";
   }
   .users:before {
-    content: "\f14c";
+    content: "\f2be";
   }
   .locations:before {
-    content: "\f14c";
+    content: "\f124";
   }
   .workflows:before {
-    content: "\f14c";
+    content: "\f0e8";
   }
   .job-boards:before {
-    content: "\f14c";
+    content: "\f0ea";
   }
   .social:before {
-    content: "\f14c";
+    content: "\f143";
+  }
+  .administrative:before {
+    content: "\f14a";
+  }
+  .design:before {
+    content: "\f14a";
+  }
+  .executive:before {
+    content: "\f14a";
+  }
+  .human-resources:before {
+    content: "\f14a";
   }
   .home:hover,
   .jobs:hover,
@@ -615,7 +651,11 @@ h3.table-header {
   .locations:hover,
   .workflows:hover,
   .job-boards:hover,
-  .social:hover {
+  .social:hover,
+  .administrative:hover,
+  .design:hover,
+  .executive:hover,
+  .human-resources:hover {
     color: white;
   }
   .home:hover:before,
@@ -630,8 +670,224 @@ h3.table-header {
   .social:hover:before {
     color: white;
   }
-
+  .administrative:hover:before {
+    color: #ECD507;
+  }
+  .design:hover:before {
+    color: #27A9F8;
+  }
+  .executive:hover:before {
+    color: #E5175D;
+  }
+  .human-resources:hover:before {
+    color: #07A788;
+  }
   a:hover {
-    background: #30394A
+    background: #30394A;
+    border-left: 2px solid #17A1F3;
+  }
+  /*=======================================
+  >>>>>>>>  header  <<<<<<<<
+  ========================================*/
+  .top-search-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: white;
+    border: 1px solid #939DAE;
+  }
+  .top-search-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+  }
+  .top-button-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .input-search {
+    border: 0px;
+    margin: 0px;
+    background-color: white;
+  }
+  .input-search::placeholder {
+    color: #939DAE;
+    background-color: white;
+    /*color:black;*/
+  }
+  .hamburger,
+  .user,
+  .calendar2,
+  .button-pad {
+    height: 50px;
+    width: 50px;
+    background: white;
+    border: none;
+  }
+  .hamburger {
+    border-right: 1px solid #939DAE;
+  }
+  .user,
+  .calendar2,
+  .button-pad {
+    border-left: 1px solid #939DAE;
+  }
+  .hamburger:before,
+  .user:before,
+  .calendar2:before,
+  .button-pad:before {
+    font-family: 'FontAwesome';
+    font-size: 14px;
+    background-color: white;
+    color: #939DAE;
+    position: relative;
+  }
+  .hamburger:before {
+    content: "\f0c9";
+  }
+  .user:before {
+    content: "\f234";
+  }
+  .calendar2:before {
+    content: "\f271";
+  }
+  .button-pad:before {
+    content: "\f00a";
+  }
+  .hamburger:hover:before,
+  .user:hover:before,
+  .calendar2:hover:before,
+  .button-pad:hover:before {
+    background: #15A4FC;
+    color: white;
+  }
+  .hamburger:hover,
+  .user:hover,
+  .calendar2:hover,
+  .button-pad:hover {
+    background: #15A4FC;
+    color: white;
+    cursor: pointer;
+    cursor: hand;
+  }
+  /*=======================================
+  >>>>>>>>  nav-top  <<<<<<<<
+  ========================================*/
+  nav.nav-top {
+    display: flex;
+    flex-direction: row;
+  }
+  h2.nav-top {
+    font-size: 12px;
+    color: green;
+    text-transform: uppercase;
+    margin: 14px 14px 0 14px;
+    padding-bottom: 14px;
+  }
+  h2.nav-top:hover {
+    border-bottom: 2px solid blue;
+  }
+  /*=======================================
+  >>>>>>>>  service rep header  <<<<<<<<
+  ========================================*/
+  div.service-rep-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  div.service-rep {
+    display: flex;
+    flex-direction: row;
+  }
+  h1.service-rep {
+    font-size: 14px;
+    margin: 0px;
+  }
+  .open {
+    border-radius: 50px;
+    background-color: white;
+    border:1px solid #939DAE;
+  }
+
+  .bookmark,
+  .pencil,
+  .trash {
+    border:1px solid #939DAE;
+    border-radius: 100px;
+    background-color:white;
+  }
+  .open:before,
+  .bookmark:before,
+  .pencil:before,
+  .trash:before {
+    font-family: 'FontAwesome';
+    font-size: 11px;
+    background-color: white;
+    color: #939DAE;
+    position: relative;
+  }
+  .open:before{
+    color: #88C92B;
+    content: "\f111";
+  }
+  .bookmark:before {
+    content: "\f02e";
+  }
+  .pencil:before {
+    content: "\f040";
+  }
+  .trash:before {
+    content: "\f014";
+  }
+  /*=======================================
+  >>>>>>>>  divider  <<<<<<<<
+  ========================================*/
+  button.divider {
+    background: white;
+    border-radius: 100px;
+    border: 1px solid #D7E4EA;
+    height: 30px;
+    width: 30px;
+  }
+  button.divider:before {
+    font-family: 'FontAwesome';
+    font-size: 10px;
+    background-color: white;
+    color: #D7E4EA;
+    position: relative;
+    content: "\f077";
+    border: 0px;
+  }
+  div.divider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  span.divider {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  span.divider:after {
+    display: inline-block;
+    margin: 0 0 3px 20px;
+    height: 2px;
+    content: " ";
+    text-shadow: none;
+    background-color: #D7E4EA;
+    width: 40%;
+  }
+  span.divider:before {
+    display: inline-block;
+    margin: 0 20px 3px 0;
+    height: 2px;
+    content: " ";
+    text-shadow: none;
+    background-color: #D7E4EA;
+    width: 40%;
   }
 }
