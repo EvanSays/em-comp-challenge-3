@@ -1,18 +1,4 @@
-/*=======================================
->>>>>>>>  Fonts  <<<<<<<<
-========================================*/
 
-
-/*@media (min-width: 400px) {
-  .table-row {
-    display: flex;
-    flex-direction: row;
-    border-bottom: 1px solid #F4F4F4;
-  }
-}*/
-
-
-/*@media (max-width: 550px) {*/
 
 h3 {
   text-transform: uppercase;
@@ -22,7 +8,6 @@ h3 {
 * {
   box-sizing: border-box;
   margin: 0;
-  /*border: 1px solid pink;*/
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -522,7 +507,7 @@ body {
 aside {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 123vh;
   width: 140px;
   background: #354052;
 }
